@@ -9,7 +9,7 @@
 
 Quiz::Quiz()
 {
-    std::srand(std::time(nullptr));
+    std::srand(STATIC_CAST(uint, std::time(nullptr)));
 }
 
 void Quiz::startQuiz(AVector<SHARED_PTR(Question)> questions)
@@ -38,7 +38,7 @@ void Quiz::askQuestions(AVector<SHARED_PTR(Question)> questions)
     Console::print("");
 
     byte score = 0;
-    for (char i = 0; i < questions.size(); ++i) {
+    for (uint i = 0; i < questions.size(); ++i) {
         /* Idk why tf this was the only spontaneous
         way to convert char to string */
         AString string;
