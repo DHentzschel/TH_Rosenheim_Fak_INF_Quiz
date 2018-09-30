@@ -9,7 +9,7 @@ class Questions {
 public:
     Questions();
 
-    ~Questions();
+    ~Questions() = default;
 
     bool initialize();
 

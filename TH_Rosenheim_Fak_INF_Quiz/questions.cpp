@@ -8,16 +8,17 @@ Questions::Questions()
     questions_.reserve(8);
 }
 
-Questions::~Questions()
-{
-}
-
 bool Questions::initialize()
 {
     if (!deserializeQuestions()) {
         return false;
     }
     return true;
+}
+
+AVector<SHARED_PTR(Question)> Questions::getQuestions()
+{
+    return questions_;
 }
 
 bool Questions::deserializeQuestions()
