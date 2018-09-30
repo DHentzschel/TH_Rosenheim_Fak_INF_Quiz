@@ -10,7 +10,7 @@
 Quiz::Quiz()
 {
     std::srand(STATIC_CAST(uint, std::time(nullptr)));
-    Console::setConsoleTitle("Hochschule Rosenheim - Fakultät Informatik Quiz");
+    Console::setConsoleTitle("Hochschule Rosenheim - Fak. Informatik Quiz");
 }
 
 void Quiz::startQuiz(AVector<SHARED_PTR(Question)> questions)
