@@ -14,12 +14,12 @@ Questions::~Questions()
 
 bool Questions::initialize()
 {
-    if (!serializeQuestions()) {
+    if (!deserializeQuestions()) {
         return false;
     }
 }
 
-bool Questions::serializeQuestions()
+bool Questions::deserializeQuestions()
 {
     File file(filename_);
     if (!file.exists()) {

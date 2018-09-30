@@ -18,7 +18,7 @@ private:
 
     AVector<SHARED_PTR(Question)> questions_;
 
-    bool serializeQuestions();
+    bool deserializeQuestions();
 
 };
 
