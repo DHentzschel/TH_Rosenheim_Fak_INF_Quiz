@@ -1,7 +1,7 @@
 # TH Rosenheim Fakultät Informatik Quiz
 ### Technical University of Applied Sciences Faculty Computer Science Quiz
 
-This project is meant to be used at the first day of every winter semester (starting at 2018-01-10, WS 18/19) for the new freshmen at the information stand for Computer Science.
+This project is meant to be used at the first day of every winter semester (starting at 2018-01-10, WS 18-19) for the new freshmen at the information stand for Computer Science.
 
 ## Binaries
 The following pre-compiled binaries are available to download:  
