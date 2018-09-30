@@ -17,6 +17,7 @@ bool Questions::initialize()
     if (!deserializeQuestions()) {
         return false;
     }
+    return true;
 }
 
 bool Questions::deserializeQuestions()
@@ -59,6 +60,7 @@ bool Questions::deserializeQuestions()
         }
 
         questions_.append(question);
+
         return true;
     };
 
@@ -67,7 +69,7 @@ bool Questions::deserializeQuestions()
 
         /* Skip if line is comment */
         if (line.startsWith(";")) {
-            return false;
+            continue;
         }
 
         serializeQuestion(line);

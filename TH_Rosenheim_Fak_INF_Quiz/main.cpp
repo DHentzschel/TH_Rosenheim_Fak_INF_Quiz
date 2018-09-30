@@ -1,10 +1,13 @@
-
+#include "consoleio.h"
 #include "questions.h"
 
 int main(int argc, char** argv)
 {
     Questions questions;
-    questions.initialize();
+    if (!questions.initialize()) {
+        return EXIT_FAILURE;
+    }
 
-    return 0;
+    ConsoleIO consoleIo;
+    return EXIT_SUCCESS;
 }

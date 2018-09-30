@@ -13,6 +13,8 @@ public:
 
     bool initialize();
 
+    AVector<SHARED_PTR(Question)> getQuestions();
+
 private:
     const AString filename_ = "data.list";
 
