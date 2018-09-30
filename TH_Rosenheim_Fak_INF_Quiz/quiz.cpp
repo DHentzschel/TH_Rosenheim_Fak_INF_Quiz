@@ -10,6 +10,7 @@
 Quiz::Quiz()
 {
     std::srand(STATIC_CAST(uint, std::time(nullptr)));
+    Console::setConsoleTitle("Hochschule Rosenheim - Fakultät Informatik Quiz");
 }
 
 void Quiz::startQuiz(AVector<SHARED_PTR(Question)> questions)
@@ -34,7 +35,8 @@ void Quiz::startQuiz(AVector<SHARED_PTR(Question)> questions)
 void Quiz::askQuestions(AVector<SHARED_PTR(Question)> questions)
 {
     Console::print("Willkommen beim Quiz der Fakultät Informatik!", true, Blue);
-    Console::print("Dir werden Fragen gestellt und du musst diese mit den Antwortmöglichkeiten 1-4 beantworten.", true);
+    Console::print("Dir werden Fragen gestellt und du musst diese mit den Antwortmöglichkeiten 1-4 beantworten.");
+    Console::print("Je nachdem, wie viele Fragen du richtig beantwortest, gewinnst du etwas. (Nur solange der Vorrat reicht!)");
     Console::print("");
 
     byte score = 0;

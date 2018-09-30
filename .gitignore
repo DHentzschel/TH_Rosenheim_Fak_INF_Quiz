@@ -21,6 +21,7 @@
 *.pch
 
 # Libraries
+!SimpleCore-d.lib
 !SimpleCore.lib
 *.lib
 *.a
