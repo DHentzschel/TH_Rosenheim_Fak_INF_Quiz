@@ -13,5 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\ConsoleIO">
+      <UniqueIdentifier>{196e5e42-783e-490e-976a-919b87f2ea42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Questions">
+      <UniqueIdentifier>{2dd56968-f0ca-499e-969d-a46564e77b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Question">
+      <UniqueIdentifier>{03a07bd2-7fec-4cce-8868-cf191e5807f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="consoleio.cpp">
+      <Filter>Quelldateien\ConsoleIO</Filter>
+    </ClCompile>
+    <ClCompile Include="questions.cpp">
+      <Filter>Quelldateien\Questions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="consoleio.h">
+      <Filter>Quelldateien\ConsoleIO</Filter>
+    </ClInclude>
+    <ClInclude Include="questions.h">
+      <Filter>Quelldateien\Questions</Filter>
+    </ClInclude>
+    <ClInclude Include="question.h">
+      <Filter>Quelldateien\Question</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
